@@ -11,4 +11,4 @@ offset_bottom = 648.0
 texture = ExtResource("1_lydol")
 stretch_mode = 1
 
-[node name="Player" parent="." instance=ExtResource("2_c2r02")]
+[node name="Player1" parent="." instance=ExtResource("2_c2r02")]
