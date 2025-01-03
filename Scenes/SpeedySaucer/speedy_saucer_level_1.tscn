@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bea1g2ecfd8jv"]
+[gd_scene load_steps=3 format=3 uid="uid://bea1g2ecfd8jv"]
 
 [ext_resource type="Texture2D" uid="uid://dkxa3ea3mgnpq" path="res://Sprites/purple.png" id="1_lydol"]
+[ext_resource type="PackedScene" uid="uid://b85m5kp1qt25y" path="res://Scenes/SpeedySaucer/player.tscn" id="2_c2r02"]
 
 [node name="SpeedySaucer_Level1" type="Node2D"]
 
@@ -9,3 +10,5 @@ offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_lydol")
 stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_c2r02")]
