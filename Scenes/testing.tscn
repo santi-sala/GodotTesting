@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://8w7754pbpx7c"]
+
+[ext_resource type="Material" uid="uid://cr20mu3efjwxw" path="res://Materials/green.tres" id="1_bgmbc"]
+[ext_resource type="Script" path="res://Scripts/spin.gd" id="2_vxt0l"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x2n7e"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_xl3c6"]
+sky_material = SubResource("ProceduralSkyMaterial_x2n7e")
+
+[sub_resource type="Environment" id="Environment_n7qsk"]
+background_mode = 2
+sky = SubResource("Sky_xl3c6")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_b68lx"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_n7qsk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_bgmbc")
+mesh = SubResource("BoxMesh_b68lx")
+script = ExtResource("2_vxt0l")
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="Environment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.97456)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
+transform = Transform3D(1, 0.000776029, -6.32785e-05, -0.000443748, 0.634823, 0.772658, 0.000639775, -0.772657, 0.634823, 0.0110769, 4.4552, 0.24143)
