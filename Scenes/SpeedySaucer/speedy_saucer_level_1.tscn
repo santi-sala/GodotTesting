@@ -6,6 +6,7 @@
 [node name="SpeedySaucer_Level1" type="Node2D"]
 
 [node name="Background" type="TextureRect" parent="."]
+z_index = -1000
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_lydol")
