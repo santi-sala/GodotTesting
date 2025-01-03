@@ -5,5 +5,50 @@
 [node name="2dLevel" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1171, 635)
+position = Vector2(280, 159)
+scale = Vector2(0.617188, 0.617188)
+texture = ExtResource("1_tysc6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(589, 159)
+scale = Vector2(0.617188, 0.617188)
+texture = ExtResource("1_tysc6")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(433, 299)
+scale = Vector2(0.425781, 0.433594)
+texture = ExtResource("1_tysc6")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(445, 452)
+scale = Vector2(2.36719, 0.201172)
+texture = ExtResource("1_tysc6")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(266, 429)
+rotation = 0.523599
+scale = Vector2(0.892449, 0.201172)
+texture = ExtResource("1_tysc6")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(629, 427)
+rotation = -0.523599
+scale = Vector2(0.892449, 0.201172)
+texture = ExtResource("1_tysc6")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(445, 452)
+scale = Vector2(2.36719, 0.201172)
+texture = ExtResource("1_tysc6")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(266, 429)
+rotation = 0.523599
+scale = Vector2(0.892449, 0.201172)
+texture = ExtResource("1_tysc6")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(629, 427)
+rotation = -0.523599
+scale = Vector2(0.892449, 0.201172)
 texture = ExtResource("1_tysc6")
