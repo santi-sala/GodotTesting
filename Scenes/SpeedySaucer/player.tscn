@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b85m5kp1qt25y"]
+[gd_scene load_steps=4 format=3 uid="uid://b85m5kp1qt25y"]
 
+[ext_resource type="Script" path="res://Scripts/SpeedySaucer_Scripts/player.gd" id="1_06hyv"]
 [ext_resource type="Texture2D" uid="uid://bu1d43y06mbk5" path="res://Sprites/ufoGreen.png" id="1_t8id6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3gs8w"]
@@ -8,6 +9,7 @@ radius = 44.2832
 [node name="Player" type="RigidBody2D"]
 position = Vector2(312, 67)
 gravity_scale = 3.0
+script = ExtResource("1_06hyv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_t8id6")
