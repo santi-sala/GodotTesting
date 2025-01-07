@@ -3,12 +3,7 @@ var my_string = "Sup"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 #	apply_impulse(Vector2(30, 50))
-	if my_string == "Sup":
-		print("Sup triggered")
-	elif my_string == "K pasa":
-		print(" K pasa triggered")
-	else:
-		print("Wrong trigger")
+	pass
 		 
 	
 func _process(delta: float) -> void:
@@ -16,6 +11,19 @@ func _process(delta: float) -> void:
 #	apply_force(Vector2(10,20))
 	pass
 	
-
+var force = 1000
 func _physics_process(delta: float) -> void:
-	apply_force(Vector2(25,0))
+	if Input.is_action_pressed("move_right"):
+		apply_force(Vector2(force,0))
+	if Input.is_action_pressed("move_left"):
+		apply_force(Vector2(-force,0))
+	if Input.is_action_pressed("move_up"):
+		apply_force(Vector2(0,-force))
+	if Input.is_action_pressed("move_down"):
+		apply_force(Vector2(0,force))
+	if Input.is_action_just_pressed("reset_position"):
+		print("k pasa")
+		transform.x = Vector2(100,0)
+		transform.y = Vector2(0, 100)
+		
+		
