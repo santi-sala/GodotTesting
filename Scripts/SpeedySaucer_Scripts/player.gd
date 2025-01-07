@@ -23,6 +23,7 @@ func _physics_process(delta: float) -> void:
 		apply_force(Vector2(0,force))
 	if Input.is_action_just_pressed("reset_position"):
 		print(add(3,5))
+		transform
 		
 func add(number_one, number_two ):
-	return number_one + number_two	
+	return number_one + number_two
