@@ -22,8 +22,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("move_down"):
 		apply_force(Vector2(0,force))
 	if Input.is_action_just_pressed("reset_position"):
-		print("k pasa")
-		transform.x = Vector2(100,0)
-		transform.y = Vector2(0, 100)
+		print(add(3,5))
 		
-		
+func add(number_one, number_two ):
+	return number_one + number_two	
