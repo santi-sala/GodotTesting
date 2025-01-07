@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bea1g2ecfd8jv"]
+[gd_scene load_steps=5 format=3 uid="uid://bea1g2ecfd8jv"]
 
 [ext_resource type="Script" path="res://Scripts/SpeedySaucer_Scripts/speedy_saucer_level.gd" id="1_3u4ei"]
 [ext_resource type="Texture2D" uid="uid://dkxa3ea3mgnpq" path="res://Sprites/purple.png" id="1_lydol"]
 [ext_resource type="PackedScene" uid="uid://b85m5kp1qt25y" path="res://Scenes/SpeedySaucer/player.tscn" id="2_c2r02"]
+[ext_resource type="PackedScene" uid="uid://bxrkpdr0qg1b6" path="res://Scenes/SpeedySaucer/maze.tscn" id="4_t2q45"]
 
 [node name="SpeedySaucer_Level1" type="Node2D"]
 script = ExtResource("1_3u4ei")
@@ -15,3 +16,7 @@ texture = ExtResource("1_lydol")
 stretch_mode = 1
 
 [node name="Player1" parent="." instance=ExtResource("2_c2r02")]
+position = Vector2(51, 49)
+
+[node name="Maze" parent="." instance=ExtResource("4_t2q45")]
+z_index = -100
