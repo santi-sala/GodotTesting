@@ -1,19 +1,61 @@
-[gd_scene load_steps=5 format=3 uid="uid://bea1g2ecfd8jv"]
+[gd_scene load_steps=7 format=3 uid="uid://bea1g2ecfd8jv"]
 
 [ext_resource type="Script" path="res://Scripts/SpeedySaucer_Scripts/speedy_saucer_level.gd" id="1_3u4ei"]
 [ext_resource type="Texture2D" uid="uid://dkxa3ea3mgnpq" path="res://Sprites/purple.png" id="1_lydol"]
 [ext_resource type="PackedScene" uid="uid://b85m5kp1qt25y" path="res://Scenes/SpeedySaucer/player.tscn" id="2_c2r02"]
 [ext_resource type="PackedScene" uid="uid://bxrkpdr0qg1b6" path="res://Scenes/SpeedySaucer/maze.tscn" id="4_t2q45"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_wjucm"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_p2di8"]
+font_size = 24
+
 [node name="SpeedySaucer_Level1" type="Node2D"]
 script = ExtResource("1_3u4ei")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Graphics" type="Node" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Graphics"]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="Graphics/CanvasLayer"]
 z_index = -1000
-offset_right = 1152.0
-offset_bottom = 648.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_lydol")
 stretch_mode = 1
+
+[node name="start_label" type="Label" parent="Graphics"]
+z_index = -5
+offset_left = 32.0
+offset_top = -99.0
+offset_right = 127.0
+offset_bottom = -54.0
+text = "START"
+label_settings = SubResource("LabelSettings_wjucm")
+
+[node name="instructions_label" type="Label" parent="Graphics"]
+z_index = -5
+offset_left = 313.0
+offset_top = 11.0
+offset_right = 552.0
+offset_bottom = 344.0
+text = "USE WASD or Arrow keys to get to the end of the maze without going out of the route."
+label_settings = SubResource("LabelSettings_p2di8")
+autowrap_mode = 3
+
+[node name="end_label" type="Label" parent="Graphics"]
+z_index = -5
+offset_left = 706.0
+offset_top = 448.0
+offset_right = 801.0
+offset_bottom = 493.0
+text = "END"
+label_settings = SubResource("LabelSettings_wjucm")
 
 [node name="Player1" parent="." instance=ExtResource("2_c2r02")]
 position = Vector2(51, 49)
