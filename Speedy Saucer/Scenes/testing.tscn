@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://8w7754pbpx7c"]
 
-[ext_resource type="Material" uid="uid://cr20mu3efjwxw" path="res://Materials/green.tres" id="1_bgmbc"]
-[ext_resource type="Script" path="res://Scripts/spin.gd" id="2_vxt0l"]
+[ext_resource type="Material" uid="uid://cr20mu3efjwxw" path="res://Speedy Saucer/Materials/green.tres" id="1_bgmbc"]
+[ext_resource type="Script" path="res://Speedy Saucer/Scripts/spin.gd" id="2_vxt0l"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x2n7e"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

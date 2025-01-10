@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bxrkpdr0qg1b6"]
 
-[ext_resource type="Texture2D" uid="uid://cwupt4rqwapb6" path="res://Sprites/darkPurple.png" id="1_iwdwr"]
+[ext_resource type="Texture2D" uid="uid://cwupt4rqwapb6" path="res://Speedy Saucer/Sprites/darkPurple.png" id="1_iwdwr"]
 
 [node name="Maze" type="Area2D"]
 
