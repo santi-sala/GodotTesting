@@ -13,4 +13,21 @@ func _physics_process(delta: float) -> void:
 		velocity.y = speed
 		
 	move_and_slide()
+	# this numbers are from the window size in projects setting -20
+	var window_size = get_viewport_rect().size
+	#if global_position.x < 20:
+		#global_position.x = 20
+	#if global_position.x > window_size.x - 20:
+		#global_position.x = window_size.x - 20
+	#if global_position.y < 20:
+		#global_position.y = 20
+	#if global_position.y > window_size.y - 20:
+		#global_position.y = window_size.y - 20
+		
+	#global_position.x = clampf(global_position.x, 20, window_size.x - 20)	
+	#global_position.y = clampf(global_position.y, 20, window_size.y - 20)
+	
+	global_position = global_position.clamp(Vector2(20,20), Vector2(window_size.x - 20, window_size.y - 20))
+	
+	
 	
