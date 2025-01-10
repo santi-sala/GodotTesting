@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbptk1s77ck44"]
+
+[ext_resource type="Texture2D" uid="uid://ry6iuxbkkudu" path="res://Alien Attack/Assets/textures/bg.png" id="1_bnitw"]
+[ext_resource type="PackedScene" uid="uid://cl2fm1bhsjt3p" path="res://Alien Attack/Scenes/alienAttack_player.tscn" id="2_koo4e"]
+
+[node name="Alien_Attack_Level_1" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 722.0
+texture = ExtResource("1_bnitw")
+stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_koo4e")]
+position = Vector2(52, 369)
